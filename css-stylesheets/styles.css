@@ -1,7 +1,9 @@
 body {
   background-color: #121212;
 }
+/*this scrolls down with the website, refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport/*/
 header {
+  z-index: 5;
   position: fixed;
   width: 100%;
   top: 0;
