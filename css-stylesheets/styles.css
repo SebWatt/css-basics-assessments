@@ -9,15 +9,14 @@ header {
   top: 0;
   left: 0;
   background-color: #004141;
-  border-radius: 50px 50px 25px 25px;
   padding: 20px;
-  margin: 5px;
 }
 h1 {
   text-align: center;
   color: azure;
 }
 nav {
+  width: 96%;
   padding: 10px;
 }
 ul {
