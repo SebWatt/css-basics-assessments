@@ -9,15 +9,17 @@ header {
   top: 0;
   left: 0;
   background-color: #004141;
-  padding: 20px;
+  padding: 14px;
 }
 h1 {
   text-align: center;
   color: azure;
+  font-size: 48px;
 }
 nav {
   width: 96%;
   padding: 10px;
+  font-size: 20px;
 }
 ul {
   border-radius: 25px 25px 25px 25px;
@@ -52,6 +54,15 @@ li a {
 
 li a:hover {
   background-color: #2f6565;
+}
+p {
+  color: azure;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+}
+section {
+  padding: 20px;
+  background-color: #434343;
 }
 footer {
   border-radius: 25px 25px 50px 50px;
