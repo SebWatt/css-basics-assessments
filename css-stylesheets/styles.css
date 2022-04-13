@@ -56,13 +56,20 @@ li a:hover {
   background-color: #2f6565;
 }
 p {
+  width: 96%;
   color: azure;
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 28px;
+  padding: 20px;
+  background-color: #004141;
+  border-radius: 50px 50px 50px 50px;
+  margin-bottom: 50px;
 }
 section {
   padding: 20px;
-  background-color: #434343;
+  background-color: #002828;
+  border-radius: 25px 25px 25px 25px;
+  margin-bottom: 50px;
 }
 footer {
   border-radius: 25px 25px 50px 50px;
