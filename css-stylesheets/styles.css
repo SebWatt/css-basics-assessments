@@ -59,7 +59,7 @@ p {
   width: 96%;
   color: azure;
   font-family: Roboto, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   padding: 20px;
   background-color: #004141;
   border-radius: 50px 50px 50px 50px;
@@ -73,16 +73,15 @@ section {
   margin-bottom: 15px;
 }
 main {
-  margin-bottom: 300px;
+  margin-bottom: 185px;
 }
 footer {
-  display: block;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  background-color: #004141;
+  position: relative;
+  margin-top: -180px;
+  height: 180px;
+  clear: both;
   padding: 20px;
+  background-color: #004141;
   text-align: center;
 }
 /*This icon area makes it so that it shows an icon as a button that you can press to go to a different link. When you hover over it it has a different color as well. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 */
