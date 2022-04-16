@@ -18,8 +18,8 @@ h1 {
 }
 nav {
   width: 96%;
-  padding: 10px;
-  font-size: 20px;
+  padding: 20px;
+  font-size: 28px;
 }
 ul {
   border-radius: 25px 25px 25px 25px;
@@ -49,7 +49,7 @@ li a {
   color: azure;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 li a:hover {
@@ -59,21 +59,44 @@ p {
   width: 96%;
   color: azure;
   font-family: Roboto, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   padding: 20px;
   background-color: #004141;
   border-radius: 50px 50px 50px 50px;
   margin-bottom: 50px;
+  box-shadow: 5px 5px 2px black;
 }
 section {
   padding: 20px;
   background-color: #002828;
   border-radius: 25px 25px 25px 25px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+}
+main {
+  margin-bottom: 300px;
 }
 footer {
-  border-radius: 25px 25px 50px 50px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
   background-color: #004141;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+}
+/*This icon area makes it so that it shows an icon as a button that you can press to go to a different link. When you hover over it it has a different color as well. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 */
+.footer-content-right {
+  padding-right: 40px;
+  margin-top: 20px;
+  float: right;
+}
+.icon-style {
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.icon-style:hover {
+  background-color: aquamarine;
+  font-size: 20px;
 }

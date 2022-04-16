@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="css-stylesheets/styles.css" />
     <style>
       img {
-        opacity: 0.3;
-        display: block;
-        height: auto;
-        width: 50%;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        filter: grayscale(100%);
+        border: 3px #195454;
+        border-radius: 50px 50px 20px 20px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
       }
     </style>
   </head>
@@ -33,19 +32,26 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main style="margin-top: 230px">
       <section>
-        <p>Living: Winnipeg, Manitoba, Canada</p>
-        <p style="background-color: #004f4f; width: 86%">
-          Hobbies: Streaming, Gaming, Hockey
-        </p>
+        <div class ="clearfix">
+          <img src="Images/myself.png" alt="Sebastien Standing in a green Roon" style="float: right; margin-right: 180px; box-shadow: 5px 5px 2px black;" width="600px" height="600px " />
+          <p style="width:max-content; ">I'm Sebastien Watt, born in Winnipeg Manitoba, </br>
+            a PTEC student in grade 10 who loves to code and learn new things. </br> Some of the languages I know and expanding my knowledge on </br> are HTML, CSS, C#, python and C.</p>
+          <p style="background-color: #004f4f; width: max-content; ">
+            You can find everything you need to know about me </br> and how I continue to grow as a website devoloper on this website.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
-      <p>Website made by Sebastien Watt</p>
-    </footer>
+      <p class="footer-text-left"></p>
+      <a href="https://github.com/SebWatt"><img src="Images/github.png" class="icon-style" alt="Github icon link to go to Sebastien Watts Github account"></a>
+    </footer> 
   </body>
 </html>
