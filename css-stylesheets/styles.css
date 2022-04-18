@@ -56,7 +56,8 @@ li a:hover {
   background-color: #2f6565;
 }
 p {
-  width: 96%;
+  margin-right: 0px;
+  width: max-content;
   color: azure;
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 28px;
