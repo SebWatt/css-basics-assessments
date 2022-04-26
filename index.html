@@ -3,7 +3,7 @@
     Course: Software Devolopment 20S
     Teacher: Mr. Hardman
     School: Pembina Trails Early College
-    Date Last Modified: 4/11/2022
+    Date Last Modified: 4/18/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +18,13 @@
         border: 3px #195454;
         border-radius: 50px 50px 20px 20px;
       }
+      /*this is to make it so that image stays in the content */
       .clearfix::after {
         content: "";
         clear: both;
         display: table;
       }
+      /*Makes it so that the paragraph only takes the max content needed */
       p {
         width: max-content;
       }
@@ -47,6 +49,7 @@
     </header>
     <main style="margin-top: 230px">
       <section>
+        <!--Makes it so the everything in the section is also in the class clearfix so that the image stays in the section-->
         <div class ="clearfix">
           <h2>A little bit about Me</h2>
           <img src="Images/myself.png" alt="Sebastien Watt standing with skates and gloves in his hands and wearing grey cloths" style="float: right; margin-right: 30px; box-shadow: 5px 5px 2px black;" width="600px" height="600px " />
@@ -60,7 +63,9 @@
       </section>
     </main>
     <footer>
+      <!--Has my Copyright-->
       <p style="width: 98%; box-shadow: none; background-color: #004f4f;" >&#169 2022 Sebastien Watt</p>
+      <!--A link in the icon form to Github where my account is linked. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7-->
       <a href="https://github.com/SebWatt"><img src="Images/github.png" class="icon-style" alt="Github icon link to go to Sebastien Watts Github account"></a>
     </footer> 
   </body>
