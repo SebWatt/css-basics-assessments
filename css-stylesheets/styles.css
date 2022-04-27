@@ -5,6 +5,11 @@
     School: Pembina Trails Early College
     Date Last Modified: 4/18/2022
   */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 140%;
+}
 body {
   background-color: #121212;
 }
@@ -15,7 +20,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #004141;
+  background-color: #0b546c;
   padding: 14px;
 }
 h1 {
@@ -23,7 +28,7 @@ h1 {
   color: azure;
   font-size: 48px;
 }
-/*Makes the nav a little bit small then the header*/
+/*Makes the nav a little bit small than the header*/
 nav {
   width: 96%;
   padding: 20px;
@@ -37,7 +42,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #195454;
+  background-color: #084356;
 }
 /*Makes the list item start on the left side of the screen*/
 li {
@@ -53,28 +58,28 @@ li a {
 }
 /* when you hover over the box it makes it a little bit brighter*/
 li a:hover {
-  background-color: #2f6565;
+  background-color: #022534;
 }
 p {
   margin-right: 0px;
   width: max-content;
   color: azure;
-  font-family: Roboto, Helvetica, sans-serif;
   font-size: 28px;
   padding: 20px;
-  background-color: #004141;
+  background-color: #052e3c;
   border-radius: 50px 50px 50px 50px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 2px black;
 }
 section {
   padding: 20px;
-  background-color: #002828;
+  background-color: #131313;
   border-radius: 25px 25px 25px 25px;
   margin-bottom: 15px;
 }
 /*makes the margin at the bottom 185 pixels*/
 main {
+  background-color: #131313;
   margin-bottom: 185px;
 }
 /*pushes up the Margin at the top to make it so that as soon as the Main content finishes the footer is there*/
@@ -85,7 +90,7 @@ footer {
   height: 180px;
   clear: both;
   padding: 20px;
-  background-color: #004141;
+  background-color: #0b546c;
   text-align: center;
 }
 /*This icon area makes it so that it shows an icon as a button that you can press to go to a different link. When you hover over it it has a different color as well. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 */
