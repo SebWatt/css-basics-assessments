@@ -11,7 +11,8 @@
   line-height: 140%;
 }
 body {
-  background-color: #121212;
+  background-color: #f4f4f0;
+  color: #0c0c0c;
 }
 /*this scrolls down with the website, refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport/*/
 header {
@@ -20,12 +21,12 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #0b546c;
+  background-color: #41b3ff;
   padding: 14px;
 }
 h1 {
   text-align: center;
-  color: azure;
+  color: #0c0c0c;
   font-size: 48px;
 }
 /*Makes the nav a little bit small than the header*/
@@ -42,7 +43,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #084356;
+  background-color: #54baff;
 }
 /*Makes the list item start on the left side of the screen*/
 li {
@@ -51,7 +52,7 @@ li {
 /*If the list item is a hyperlink it makes the list item a block element, color azure, no text decoration, centered and have a box around it*/
 li a {
   display: block;
-  color: azure;
+  color: #0c0c0c;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,27 +60,28 @@ li a {
 /* when you hover over the box it makes it a little bit brighter*/
 li a:hover {
   background-color: #022534;
+  color: azure;
 }
 p {
   margin-right: 0px;
   width: max-content;
-  color: azure;
+  color: #0c0c0c;
   font-size: 28px;
   padding: 20px;
-  background-color: #052e3c;
-  border-radius: 50px 50px 50px 50px;
+  background-color: #54baff;
+  border-radius: 3px 3px 5px 5px;
   margin-bottom: 50px;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: 5px 5px 2px #acacac;
 }
 section {
   padding: 20px;
-  background-color: #131313;
-  border-radius: 25px 25px 25px 25px;
+  background-color: #e5e5e5;
+  border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
 }
 /*makes the margin at the bottom 185 pixels*/
 main {
-  background-color: #131313;
+  background-color: #e5e5e5;
   margin-bottom: 185px;
 }
 /*pushes up the Margin at the top to make it so that as soon as the Main content finishes the footer is there*/
@@ -90,7 +92,7 @@ footer {
   height: 180px;
   clear: both;
   padding: 20px;
-  background-color: #0b546c;
+  background-color: #41b3ff;
   text-align: center;
 }
 /*This icon area makes it so that it shows an icon as a button that you can press to go to a different link. When you hover over it it has a different color as well. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 */
