@@ -37,7 +37,7 @@ nav {
   overflow: hidden;
 }
 
-ul {
+nav ul {
   border-radius: 25px 25px 25px 25px;
   list-style-type: none;
   margin: 0;
@@ -46,11 +46,11 @@ ul {
   background-color: #54baff;
 }
 /*Makes the list item start on the left side of the screen*/
-li {
+nav li {
   float: left;
 }
 /*If the list item is a hyperlink it makes the list item a block element, color azure, no text decoration, centered and have a box around it*/
-li a {
+nav li a {
   display: block;
   color: #0c0c0c;
   text-align: center;
@@ -58,7 +58,7 @@ li a {
   text-decoration: none;
 }
 /* when you hover over the box it makes it a little bit brighter*/
-li a:hover {
+nav li a:hover {
   background-color: #022534;
   color: azure;
 }
