@@ -3,7 +3,7 @@
     Course: Software Devolopment 20S
     Teacher: Mr. Hardman
     School: Pembina Trails Early College
-    Date Last Modified: 4/18/2022
+    Date Last Modified: 5/2/2022
   */
 /*
   This makes the font family a sans-serif font for all elements because I want to show that my website is accessible. 
@@ -78,7 +78,10 @@ nav li a:hover {
   color: azure;
 }
 /*
-  This makes it so the paragraph
+  This makes it so the color of the text is black, it also gives the text a font size of 24. It makes the padding around the text 20 
+  pixels but the width is how much the the content of the text is. It makes the background color a light blue because i want it to 
+  display trust and imagination. It gives the border a very small curve, gives a margin to the bottom of 50 pixels to space out p tags
+  from each other. Gives the Paragraph box a shadow of a darker grey than the background light grey.
  */
 p {
   width: max-content;
@@ -90,6 +93,10 @@ p {
   margin-bottom: 50px;
   box-shadow: 5px 5px 2px #acacac;
 }
+/*
+  This makes it so there is a padding of 20 pixels, it makes that padding a light grey.
+  It gives the corners a very small curve and gives the bottom a small margin.
+ */
 section {
   padding: 20px;
   background-color: #e5e5e5;
@@ -114,12 +121,17 @@ footer {
   background-color: #41b3ff;
   text-align: center;
 }
-/*This icon area makes it so that it shows an icon as a button that you can press to go to a different link. When you hover over it it has a different color as well. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 */
+
 .footer-content-right {
   padding-right: 40px;
   margin-top: 20px;
   float: right;
 }
+/*
+  This icon area makes it so that it shows an icon as a button that you can press to go to a different link. 
+  When you hover over it it has a different color as well. Referenced from
+  https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 
+ */
 .icon-style {
   height: 40px;
   margin-top: 5px;
