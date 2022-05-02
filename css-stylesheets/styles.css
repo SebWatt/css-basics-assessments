@@ -5,11 +5,17 @@
     School: Pembina Trails Early College
     Date Last Modified: 4/18/2022
   */
-
+/*
+  This makes the font family a sans-serif font for all elements because I want to show that my website is accessible. 
+  It also changes the line height to 140% to make the text readable
+ */
 * {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 140%;
 }
+/*
+  this makes the Background color white and the color of the text black
+ */
 body {
   background-color: #f4f4f0;
   color: #0c0c0c;
@@ -27,13 +33,15 @@ header {
 h1 {
   text-align: center;
   color: #0c0c0c;
-  font-size: 48px;
+  font-size: 64px;
 }
-/*Makes the nav a little bit small than the header*/
+/*
+  Makes the nav a little bit small than the header
+ */
 nav {
   width: 96%;
   padding: 20px;
-  font-size: 28px;
+  font-size: 24px;
   overflow: hidden;
 }
 
@@ -45,11 +53,16 @@ nav ul {
   overflow: hidden;
   background-color: #54baff;
 }
-/*Makes the list item start on the left side of the screen*/
+/*
+  Makes the list item start on the left side of the screen
+ */
 nav li {
   float: left;
 }
-/*If the list item is a hyperlink it makes the list item a block element, color azure, no text decoration, centered and have a box around it*/
+/*
+  If the list item is a hyperlink it makes the list item a block element, it makes the color of the text black, makes it so 
+  there is no text decoration, makes the text centered and have a square box of 14 by 16 pixels around it
+ */
 nav li a {
   display: block;
   color: #0c0c0c;
@@ -57,16 +70,20 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-/* when you hover over the box it makes it a little bit brighter*/
+/* 
+  when you hover over the box it makes the color a darker blue then the blue that is, and it changes the text color to azure.
+ */
 nav li a:hover {
   background-color: #022534;
   color: azure;
 }
+/*
+  This makes it so the paragraph
+ */
 p {
-  margin-right: 0px;
   width: max-content;
   color: #0c0c0c;
-  font-size: 28px;
+  font-size: 24px;
   padding: 20px;
   background-color: #54baff;
   border-radius: 3px 3px 5px 5px;
@@ -79,7 +96,9 @@ section {
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
 }
-/*makes the margin at the bottom 185 pixels*/
+/*
+  makes the margin at the bottom 185 pixels and makes the background a very light grey
+ */
 main {
   background-color: #e5e5e5;
   margin-bottom: 185px;
