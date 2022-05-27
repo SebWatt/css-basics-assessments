@@ -23,8 +23,8 @@ body {
 /*this scrolls down with the website, refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport/*/
 header {
   z-index: 5;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+
   top: 0;
   left: 0;
   background-color: #41b3ff;
@@ -117,6 +117,7 @@ footer {
   margin-top: -180px;
   height: 180px;
   clear: both;
+  margin-left: 0px;
   padding: 20px;
   background-color: #41b3ff;
   text-align: center;
