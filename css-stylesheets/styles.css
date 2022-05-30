@@ -1,10 +1,14 @@
 /*
-    Name: Sebastien Watt
-    Course: Software Devolopment 20S
-    Teacher: Mr. Hardman
-    School: Pembina Trails Early College
-    Date Last Modified: 5/2/2022
-  */
+  Name: Sebastien Watt
+  Course: Software Devolopment 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 5/2/2022
+*/
+/*
+  So I chose the color blue to represent trust and imaginativity. I think that having trust in a website is important to a client so that they know that i'm honest and 
+  hard working. I think having imaginativity in a website is smart because I personnally think that I create lots of ideas that I want to complete in the future and the present.
+ */
 /*
   This makes the font family a sans-serif font for all elements because I want to show that my website is accessible. 
   It also changes the line height to 140% to make the text readable
@@ -14,29 +18,42 @@
   line-height: 140%;
 }
 /*
-  this makes the Background color white and the color of the text black
+  This makes the background color white and the color of the text black
  */
 body {
   background-color: #f4f4f0;
   color: #0c0c0c;
+  margin: 0; /* This fixed my biggest problem */
 }
-/*this scrolls down with the website, refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport/*/
+/*
+  This scrolls down with the website, its z index will be 5 to be infront of every thing at the top. Its width will be 100% because we want it to be the full width of the page
+  The top and left positions are 0 because I dont want there to be empty space on the top or on the side. The color is a light blue to show trust and show that i'm imaginative
+  It has a Padding of 14 because there will be alot of elements inside of the header so I don't need the padding to be huge.
+  Refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport
+ */
 header {
   z-index: 5;
-  position: sticky;
+  display: block;
 
+  position: sticky;
+  width: 100%;
+  margin: 0;
   top: 0;
   left: 0;
   background-color: #41b3ff;
   padding: 14px;
 }
+/*
+  This is made simply for the title in the footer its font size is 64px, it is centered and its color is black
+ */
 h1 {
   text-align: center;
   color: #0c0c0c;
   font-size: 64px;
 }
 /*
-  Makes the nav a little bit small than the header
+  Makes the nav a little bit small than the header. It makes it so that the width is 96% so that it isn't overlappping with the footer
+  it makes the padding 20 and the font size 24px. The overflow is hidden to prevent scrollbars from showing up.
  */
 nav {
   width: 96%;
@@ -44,14 +61,19 @@ nav {
   font-size: 24px;
   overflow: hidden;
 }
-
+/* 
+  This makes it so the navagation unordered list has no bullets or style of list. The Margin and Padding are there to make sure that the list item is able to use up all of the
+  space it can. The overflow is hidden to prevent scrollbars from showing up. And the background color is a lighter blue to display trust and imagination and so the colors would 
+  completly crash with each other. I also made the corners have more of a curve.
+ */
 nav ul {
   border-radius: 25px 25px 25px 25px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #54baff;
+  background-color: #022534;
+  color: #eeffee;
 }
 /*
   Makes the list item start on the left side of the screen
@@ -65,7 +87,7 @@ nav li {
  */
 nav li a {
   display: block;
-  color: #0c0c0c;
+  color: #eeffee;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -73,9 +95,10 @@ nav li a {
 /* 
   when you hover over the box it makes the color a darker blue then the blue that is, and it changes the text color to azure.
  */
-nav li a:hover {
-  background-color: #022534;
-  color: azure;
+nav li a:hover,
+nav li a:focus {
+  background-color: #eeffee;
+  color: #022534;
 }
 /*
   This makes it so the color of the text is black, it also gives the text a font size of 24. It makes the padding around the text 20 
@@ -110,10 +133,14 @@ main {
   background-color: #e5e5e5;
   margin-bottom: 185px;
 }
-/*pushes up the Margin at the top to make it so that as soon as the Main content finishes the footer is there*/
-/*the text inside of the footer is also centered*/
+/*
+  pushes up the Margin by making it -180 pixels and it makes the height of the actual footer 180 pixels. Makes a margin at the top to make it so that as soon as 
+  the Main content finishes the footer is there. It makes a padding of 20 px and makes the background color of the box the same blue as the headings for consistent 
+  colors and to display trust and imagination
+ */
 footer {
   position: relative;
+  width: 100%;
   margin-top: -180px;
   height: 180px;
   clear: both;
@@ -122,22 +149,19 @@ footer {
   background-color: #41b3ff;
   text-align: center;
 }
-
-.footer-content-right {
-  padding-right: 40px;
-  margin-top: 20px;
-  float: right;
-}
 /*
   This icon area makes it so that it shows an icon as a button that you can press to go to a different link. 
-  When you hover over it it has a different color as well. Referenced from
-  https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 
+  It makes its height 40 pixels and it has a top margin of 5 and a left margin of 20 in case you add multiple of the same elements
  */
 .icon-style {
   height: 40px;
   margin-top: 5px;
   margin-left: 20px;
 }
+/*
+  When you hover over it it has a different color as well. Referenced from
+  https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7 
+ */
 .icon-style:hover {
   background-color: aquamarine;
   font-size: 20px;
