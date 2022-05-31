@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Work</title>
     <link rel="stylesheet" href="css-stylesheets/styles.css" />
+    <style>
+      div.work-gallery {
+        margin: 5px;
+        border: 1px solid #022534;
+        background-color: #54baff;;
+        color: #0c0c0c;
+        float: left;
+        width: 450px;
+      }
+      div.work-gallery img {
+        width: 100%;
+        height: auto;
+      }
+      div.work-desc {
+        padding: 15px;
+        margin: 0px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,19 +33,32 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li> 
           <li><a href="work.html">My Work</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        
+        <!-- Want to make a picture gallery for some of the projects I have made, such as the shrek game, the acade game, freedom friday car game, some of the websites, 
+          and some other projects i did on the side. I might add my twitch because its kinda of a passion project. They will all have desciptions-->
+          <div class="work-gallery">
+            <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="600px" height="600px"/>
+            <div class="work-desc"> Discription of my shrek game </div>
+          </div>
+          <div class="work-gallery">
+            <img src="Images/shrek-game.png" alt="pixelated " width="600px" height="600px"/>
+            <div class="work-desc"> Discription of my shrek game </div>
+          </div>
+          <div class="work-gallery">
+            <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="600px" height="600px"/>
+            <div class="work-desc"> Discription of my shrek game </div>
+          </div>
       </section>
     </main>
      <footer>
       <!--Has my Copyright-->
-      <p style="width: 98%; box-shadow: none; background-color: #022534; color: #eeffee" >&#169 2022 Sebastien Watt</p>
+      <p style="width: 95%; box-shadow: none; background-color: #022534; color: #eeffee" >&#169 2022 Sebastien Watt</p>
       <!--A link in the icon form to Github where my account is linked. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7-->
       <a href="https://github.com/SebWatt"><img src="Images/github.png" class="icon-style" alt="Github icon link to go to Sebastien Watts Github account" style="line-height: 0%;"></a>
     </footer> 

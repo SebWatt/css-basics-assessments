@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 10 version
+*/
+
+/*
   Name: Sebastien Watt
   Course: Software Devolopment 20S
   Teacher: Mr. Hardman
@@ -21,7 +28,6 @@
   This makes the background color white and the color of the text black
  */
 body {
-  background-color: #f4f4f0;
   color: #0c0c0c;
   margin: 0; /* This fixed my biggest problem */
 }
@@ -33,7 +39,10 @@ body {
  */
 header {
   z-index: 5;
+  -moz-display: block;
   display: block;
+
+  position: -webkit-sticky;
 
   position: sticky;
   width: 100%;
@@ -97,7 +106,7 @@ nav li a {
  */
 nav li a:hover,
 nav li a:focus {
-  background-color: #eeffee;
+  background-color: #ffffff;
   color: #022534;
 }
 /*
@@ -107,6 +116,8 @@ nav li a:focus {
   from each other. Gives the Paragraph box a shadow of a darker grey than the background light grey.
  */
 p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   color: #0c0c0c;
   font-size: 24px;
@@ -114,6 +125,7 @@ p {
   background-color: #54baff;
   border-radius: 3px 3px 5px 5px;
   margin-bottom: 50px;
+  -webkit-box-shadow: 5px 5px 2px #acacac;
   box-shadow: 5px 5px 2px #acacac;
 }
 /*
@@ -122,7 +134,7 @@ p {
  */
 section {
   padding: 20px;
-  background-color: #e5e5e5;
+  background-color: #eeffee;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
 }
