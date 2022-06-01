@@ -7,17 +7,27 @@
     <title>My Work</title>
     <link rel="stylesheet" href="css-stylesheets/styles.css" />
     <style>
+      h2 {
+        text-align: center;
+        font-size: 40px;
+      }
       div.work-gallery {
+        left: 5%;
+
         margin: 5px;
         border: 1px solid #022534;
         background-color: #54baff;;
         color: #0c0c0c;
         float: left;
-        width: 450px;
+        width: 500px;
       }
       div.work-gallery img {
         width: 100%;
         height: auto;
+      }
+      div.work-gallery video {
+        width: 100%;
+        height: 100%;
       }
       div.work-desc {
         padding: 15px;
@@ -40,18 +50,26 @@
     </header>
     <main>
       <section>
+        <h2>My Games</h2>
         <!-- Want to make a picture gallery for some of the projects I have made, such as the shrek game, the acade game, freedom friday car game, some of the websites, 
           and some other projects i did on the side. I might add my twitch because its kinda of a passion project. They will all have desciptions-->
           <div class="work-gallery">
             <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="600px" height="600px"/>
-            <div class="work-desc"> Discription of my shrek game </div>
+            <div class="work-desc"> This was my first ever functioning game that I made in unity</div>
           </div>
-          <div class="work-gallery">
-            <img src="Images/shrek-game.png" alt="pixelated " width="600px" height="600px"/>
-            <div class="work-desc"> Discription of my shrek game </div>
+          <div class="work-gallery" style="width: 500px;">
+            <video width="320" height="500" controls muted>
+              <source src="Images/Game!.mp4" type="video/mp4"/>
+
+            </video>
+            <div class="work-desc"> This was my arcade game that me and a group made in 2021. This game was extremly important 
+              for me as a game designer because it was the most </div>
           </div>
+
           <div class="work-gallery">
-            <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="600px" height="600px"/>
+            <video width="320" height="240" controls muted>
+              <source src="Images/CarGame.mp4" type="video/mp4"/>
+            </video>
             <div class="work-desc"> Discription of my shrek game </div>
           </div>
       </section>
