@@ -10,16 +10,18 @@
       h2 {
         text-align: center;
         font-size: 40px;
+        border: #022534 solid 1px;
       }
       div.work-gallery {
-        left: 5%;
-
         margin: 5px;
         border: 1px solid #022534;
         background-color: #54baff;;
         color: #0c0c0c;
         float: left;
+        margin-left: 5%;
+        font-size: 24px;
         width: 500px;
+        height: 450px;
       }
       div.work-gallery img {
         width: 100%;
@@ -27,12 +29,17 @@
       }
       div.work-gallery video {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
       div.work-desc {
         padding: 15px;
         margin: 0px;
         text-align: center;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
       }
     </style>
   </head>
@@ -53,25 +60,62 @@
         <h2>My Games</h2>
         <!-- Want to make a picture gallery for some of the projects I have made, such as the shrek game, the acade game, freedom friday car game, some of the websites, 
           and some other projects i did on the side. I might add my twitch because its kinda of a passion project. They will all have desciptions-->
-          <div class="work-gallery">
-            <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="600px" height="600px"/>
-            <div class="work-desc"> This was my first ever functioning game that I made in unity</div>
-          </div>
-          <div class="work-gallery" style="width: 500px;">
-            <video width="320" height="500" controls muted>
-              <source src="Images/Game!.mp4" type="video/mp4"/>
-
-            </video>
-            <div class="work-desc"> This was my arcade game that me and a group made in 2021. This game was extremly important 
-              for me as a game designer because it was the most </div>
-          </div>
-
-          <div class="work-gallery">
-            <video width="320" height="240" controls muted>
-              <source src="Images/CarGame.mp4" type="video/mp4"/>
-            </video>
-            <div class="work-desc"> Discription of my shrek game </div>
-          </div>
+        <div class="work-gallery">
+          <img src="Images/shrek-game.png" alt="Pixel Shrek in a pixelated swamp" width="500px" height="500px"/>
+          <div class="work-desc"> This was my first ever functioning game that I made in Unity. </div>
+        </div>
+        <div class="work-gallery">
+          <video width="500" height="500" title="Starts in a pixelated cave in the main menu screen, in the cave there is two torches one on the right and the other on the left lighting up the cave can the katana on a pedestal in the middle.
+          There is three options for the user to pick in the game all in pink text, one saying play, the one below that says credits and the bottom one says quit. The user clicks on credits and the text changes to a heading saying credits
+          and text below it showing the people who helped create the game in different parts. Those parts are Art, Coding and Exterior. At the bottom it says back and the user clicks on it. The user then hovers over the play tab and clicks it.
+          The screen changes to the street fighter style game with a knight on the left side and a bone looking wizard on the right side. At the top of both charaters there is their health bars and at the top middle there is a timer showing how long
+          there is to fight. The user shows the charaters moving left and right and then shows their fighting animations. The Knight has a sword swing and a shield bash, while the wizard has a grey fire ball spin and a ranged fire ball attack.
+          While the user are doing these attacks the health bars of the charaters go down. Eventually the knights health reaches zero and the knights body turns purple and then evaporates only leaving his head and sword on the ground. The wizard moves
+          around a little bit and then the screen goes back to the menu screen and the video ends." controls muted>
+            <source src="Images/Game!.mp4" type="video/mp4"/>
+          </video>
+        <div class="work-desc"> This was my arcade game that me and a group made in 2021. This game was extremly important 
+          for me as a game designer because it was the most difficult projects to make and I learned a lot about working as a group.</div>
+        </div>
+        <div class="work-gallery">
+          <video width="320" height="240" title="Starts in the Unity Engine with a screen of a checkered car beside a red car with dirt as the ground below them and 
+          text saying Lap time and Best lap time on the top right. The cursor goes the play button and clicks it, this starts the screen to show the cars racing through a forest with orange and green trees. 
+          Theres also red boxes indicating the red cars pathway. The car camera also changes for the the checkered car with one being first person, one being right behind the car and one being way above the car.
+          The car eventually crashes into a hill. The lap time at the top right of the screen goes up for how long the video plays" controls muted>
+            <source src="Images/CarGame.mp4" type="video/mp4"/>
+          </video>
+          <div class="work-desc"> 
+            This was a solo project that I made over the course of 16 weeks. 
+            This project teached me how tedious it is to playtest AIs. 
+            I was making it off a tutorial but I was super happy off the progress I made for it. </div>
+        </div>
+        <div class="work-gallery">
+          <video width="320" height="240" title="Starts in the Unity Engine with a screen of a green platform and text saying New Text on the top right. 
+            The cursor goes the play button and clicks it, this starts the screens sky to start turning blue for the day time, and turn dark for the night time and then it repeats in a cycle.
+            The text in the top right of the screen turns into numbers that are the current time of day for the scene." controls muted>
+            <source src="Images/DayAndNight.mp4" type="video/mp4" />
+          </video>
+          <div class="work-desc"> This was a day cycle for a group project that I did this year. The project helped me learn more about keeping track
+              of time and being more realistic on what to get done.</div>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+      <section> 
+        <h2>My Websites</h2>
+        <div class="work-gallery" style="height: 475px;">
+          <img src="Images/SuperMarioGalaxy-web.PNG" alt="Website themed off of the game Super Mario Galaxy that came out on the Wii. Header with a purple galaxy image with a heading titled Super Mario Galaxy. Below that is a desciption of what the website is about. Below that is a video of the game and a picture of mario soaring throught the galaxy with a star beside him" width="500px" height="500px"/>
+          <div class="work-desc"> This was my first ever website that I have made. It was my first project using HTML and CSS. It helped me learn the correct way to use HTML and it taught a little bit about CSS.</div>
+        </div>
+        <div class="work-gallery" style="height: 475px;">
+          <img src="Images/Blackfoot-peoples-history-web.PNG" alt="Light grey header with a Heading with the title of Blackfoot people. Below that is a desciption of what the website is about. There is a picture on the right that shows the map of treaty 7. On the left there is a light grey navagation bar" width="500px" height="500px"/>
+          <div class="work-desc"> This was a project that I did for my History class. It helped me devolop more skills in CSS, and helped me with organization of websites.</div>
+        </div>
+        <div class="work-gallery" style="height: 475px;">
+          <img src="Images/twitch-BobMan-web.PNG" alt="A Twitch tab of the Streamer BobMan___. A Monkey in the background and a video of his last stream as the header. Below that theres a picture of a monkey in a astronaut suit
+          waving as a profile picture, the name BobMan___ and the follower count is right beside the profile picture. Below that is his previous streams that he has done and the length of them." width="500px" height="500px"/>
+          <div class="work-desc"> This is my part on the website Twitch. 
+            My streaming has been a passion project for the last year and it has helped me devolop connections and skills with prensentating my content.</div>
+        </div>
       </section>
     </main>
      <footer>
