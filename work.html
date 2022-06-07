@@ -1,3 +1,10 @@
+<!--
+  Name: Sebastien Watt
+  Course: Software Devolopment 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 6/6/2022
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,36 +14,51 @@
     <title>My Work</title>
     <link rel="stylesheet" href="css-stylesheets/styles.css" />
     <style>
+      /* This aligns the text to be center as a font of 40 pixels it also puts a border around the text thats dark navy and 1 pixel big.*/
       h2 {
         text-align: center;
         font-size: 40px;
         border: #022534 solid 1px;
       }
+      /* 
+      This creates a box for a image to be in it has a margin of 5 pixels, a extra 50 pixels for the bottom and a extra 5% for the left. It has a border of 1 pixel and it coloured dark navy,
+      the inside of the box is coloured light blue and the colour of the text is black. Its floated to go left so that if theres not enough space on the right. Its font size is 24 pixels, 
+      and its whole space is total is 500 pixels wide and 450 pixels tall.
+      */
       div.work-gallery {
         margin: 5px;
         margin-bottom: 50px;
+        margin-left: 5%;
         border: 1px solid #022534;
-        background-color: #54baff;;
+        background-color: #54baff;
         color: #0c0c0c;
         float: left;
-        margin-left: 5%;
         font-size: 24px;
         width: 500px;
         height: 450px;
       }
+      /* This makes the image the whole width of the box and the height is auto to not make the image stretched*/
       div.work-gallery img {
         width: 100%;
         height: auto;
       }
+      /* This makes the image the whole width of the box and the height is auto to not make the video stretched*/
       div.work-gallery video {
         width: 100%;
         height: auto;
       }
+      /* 
+      This creates a text box underneath the padding around it to 15 pixels, its margin is 0 so that there isn't a awkward space in between the picture and the text, 
+      it also aligns the text to the center.
+      */
       div.work-desc {
         padding: 15px;
         margin: 0px;
         text-align: center;
       }
+      /*
+        this is to make it so that image stays in the content
+       */
       .clearfix::after {
         content: "";
         clear: both;
@@ -66,33 +88,33 @@
           <div class="work-desc"> This was my first ever functioning game that I made in Unity. </div>
         </div>
         <div class="work-gallery">
-          <video width="500" height="500" title="Starts in a pixelated cave in the main menu screen, in the cave there is two torches one on the right and the other on the left lighting up the cave can the katana on a pedestal in the middle.
-          There is three options for the user to pick in the game all in pink text, one saying play, the one below that says credits and the bottom one says quit. The user clicks on credits and the text changes to a heading saying credits
+          <video width="500" height="500" title="The video starts in a pixelated cave in the main menu screen. In the cave there are two torches, one on the right and the other on the left, lighting up the cave and the katana on a pedestal in the middle.
+          There are three options for the user to pick in the game, all in pink text, one saying play, the one below that says credits, and the bottom one says quit. The user clicks on credits and the text changes to a heading saying credits
           and text below it showing the people who helped create the game in different parts. Those parts are Art, Coding and Exterior. At the bottom it says back and the user clicks on it. The user then hovers over the play tab and clicks it.
-          The screen changes to the street fighter style game with a knight on the left side and a bone looking wizard on the right side. At the top of both charaters there is their health bars and at the top middle there is a timer showing how long
+          The screen changes to the street fighter style game with a knight on the left side and a bone-looking wizard on the right side. At the top of both charaters there is their health bars and at the top middle there is a timer showing how long
           there is to fight. The user shows the charaters moving left and right and then shows their fighting animations. The Knight has a sword swing and a shield bash, while the wizard has a grey fire ball spin and a ranged fire ball attack.
-          While the user are doing these attacks the health bars of the charaters go down. Eventually the knights health reaches zero and the knights body turns purple and then evaporates only leaving his head and sword on the ground. The wizard moves
+          While the user is doing these attacks the health bars of the charaters go down. Eventually the knight's health reaches zero and the knight's body turns purple and then evaporates, only leaving his head and sword on the ground. The wizard moves
           around a little bit and then the screen goes back to the menu screen and the video ends." controls muted>
             <source src="Images/Game!.mp4" type="video/mp4"/>
           </video>
         <div class="work-desc"> This was my arcade game that me and a group made in 2021. This game was extremly important 
-          for me as a game designer because it was the most difficult projects to make and I learned a lot about working as a group.</div>
+          for me as a game designer because it was one of the most difficult projects to make and I learned a lot about working as a group.</div>
         </div>
         <div class="work-gallery">
-          <video width="320" height="240" title="Starts in the Unity Engine with a screen of a checkered car beside a red car with dirt as the ground below them and 
-          text saying Lap time and Best lap time on the top right. The cursor goes the play button and clicks it, this starts the screen to show the cars racing through a forest with orange and green trees. 
-          Theres also red boxes indicating the red cars pathway. The car camera also changes for the the checkered car with one being first person, one being right behind the car and one being way above the car.
+          <video width="320" height="240" title="This video starts in the Unity Engine with a screen of a checkered car beside a red car with dirt as the ground below them and 
+          text saying Lap time and Best lap time on the top right. The cursor goes to the play button and clicks it. This starts the screen to show the cars racing through a forest with orange and green trees. 
+          There are also red boxes indicating the red car's pathway. The car camera also changes for the the checkered car with one being first person, one being right behind the car and one being way above the car.
           The car eventually crashes into a hill. The lap time at the top right of the screen goes up for how long the video plays" controls muted>
             <source src="Images/CarGame.mp4" type="video/mp4"/>
           </video>
           <div class="work-desc"> 
             This was a solo project that I made over the course of 16 weeks. 
-            This project teached me how tedious it is to playtest AIs. 
-            I was making it off a tutorial but I was super happy off the progress I made for it. </div>
+            This project taught me how tedious it is to playtest AIs. 
+            I was making it off a tutorial but I was super happy with the progress I made on it. </div>
         </div>
         <div class="work-gallery">
-          <video width="320" height="240" title="Starts in the Unity Engine with a screen of a green platform and text saying New Text on the top right. 
-            The cursor goes the play button and clicks it, this starts the screens sky to start turning blue for the day time, and turn dark for the night time and then it repeats in a cycle.
+          <video width="320" height="240" title="This video starts in the Unity Engine with a screen of a green platform and text saying New Text on the top right. 
+            The cursor goes the play button and clicks it. This causes the screen's sky to start turning blue for the day time and then to turn dark for the night time and then it repeats in a cycle.
             The text in the top right of the screen turns into numbers that are the current time of day for the scene." controls muted>
             <source src="Images/DayAndNight.mp4" type="video/mp4" />
           </video>
@@ -112,8 +134,8 @@
           <div class="work-desc"> This was a project that I did for my History class. It helped me devolop more skills in CSS, and helped me with organization of websites.</div>
         </div>
         <div class="work-gallery" style="height: 475px;">
-          <img src="Images/twitch-BobMan-web.PNG" alt="A Twitch tab of the Streamer BobMan___. A Monkey in the background and a video of his last stream as the header. Below that theres a picture of a monkey in a astronaut suit
-          waving as a profile picture, the name BobMan___ and the follower count is right beside the profile picture. Below that is his previous streams that he has done and the length of them." width="500px" height="500px"/>
+          <img src="Images/twitch-BobMan-web.PNG" alt="A Twitch tab of the Streamer BobMan___. A Monkey in the background and a video of his last stream as the header. Below that there's a picture of a monkey in a astronaut suit
+          waving as a profile picture. The name BobMan___ and the follower count is right beside the profile picture. Below that are the previous streams that he has done and the length of them." width="500px" height="500px"/>
           <div class="work-desc"> This is my part on the website Twitch. 
             My streaming has been a passion project for the last year and it has helped me devolop connections and skills with prensentating my content.</div>
         </div>
@@ -121,7 +143,7 @@
     </main>
      <footer>
       <!--Has my Copyright-->
-      <p style="width: 95%; box-shadow: none; background-color: #022534; color: #eeffee" >&#169 2022 Sebastien Watt</p>
+      <p style="width: 95%; box-shadow: none; background-color: #022534; color: #eeffee; margin-left: 0%;" >&#169 2022 Sebastien Watt</p>
       <!--A link in the icon form to Github where my account is linked. Referenced from https://www.digitalocean.com/community/tutorials/how-to-create-a-static-footer-with-html-and-css-section-7?msclkid=ef21f944bdbf11ec8da26746520ed9a7-->
       <a href="https://github.com/SebWatt"><img src="Images/github.png" class="icon-style" alt="Github icon link to go to Sebastien Watts Github account" style="line-height: 0%;"></a>
     </footer> 

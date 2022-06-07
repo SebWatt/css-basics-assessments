@@ -1,16 +1,9 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 10 version
-*/
-
-/*
   Name: Sebastien Watt
   Course: Software Devolopment 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified: 5/2/2022
+  Date Last Modified: 6/6/2022
 */
 /*
   So I chose the color blue to represent trust and imaginativity. I think that having trust in a website is important to a client so that they know that i'm honest and 
@@ -25,24 +18,23 @@
   line-height: 140%;
 }
 /*
-  This makes the background color white and the color of the text black
+  This makes the background color white and the color of the text black. Switching the margin to zero fixed my biggest problem for the header and the footer, 
+  which was they didn't actually go across the screen fully and now I think it looks better.
  */
 body {
   color: #0c0c0c;
-  margin: 0; /* This fixed my biggest problem */
+  margin: 0;
   background-color: #f8f8ff;
 }
 
 /*
-  This scrolls down with the website, its z index will be 5 to be infront of every thing at the top. Its width will be 100% because we want it to be the full width of the page
-  The top and left positions are 0 because I dont want there to be empty space on the top or on the side. The color is a light blue to show trust and show that i'm imaginative
-  It has a Padding of 14 because there will be alot of elements inside of the header so I don't need the padding to be huge.
+  This scrolls down with the website while also spacing out the content below it, its z index will be 5 to be infront of every thing at the top. 
+  The top and left positions are 0 because I dont want there to be empty space on the top or on the side. The color is a light blue to show trust 
+  and show that i'm imaginative. It has a Padding of 14 because there will be alot of elements inside of the header so I don't need the padding to be huge.
   Refereced from https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport
  */
 header {
   z-index: 5;
-  -moz-display: block;
-  display: block;
 
   position: -webkit-sticky;
 
@@ -54,7 +46,7 @@ header {
   padding: 14px;
 }
 /*
-  This is made simply for the title in the footer its font size is 64px, it is centered and its color is black
+  This is made simply for the title in the footer its font size is 64px, it is centered and its color is black. The margin is 0 to make it stick to the top of the screen
  */
 h1 {
   text-align: center;
@@ -64,28 +56,62 @@ h1 {
   line-height: 150%;
   border: #022534 solid 1px;
 }
+/*
+  This is what it shows before the transition shows starts. It works like this because the transform is used for the X index which is set to 0 when you are not hoving over it
+  so that you don't play the transition when your not supposed to. This is referenced from https://blog.hubspot.com/website/css-animation-examples
+ */
 h1::before {
-  transform: scaleX(0%);
-  transform-origin: top bottom;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
 }
+/*
+  This shows that the transition goes from the middle to both sides when you hover. It works like this because the transform is used for the X index and put it to 1 so 
+  that it would go do its length 100% and I it so that it wants to go the left and right direction. It creates a opening from the middle like a curtain being open. This is referenced from https://blog.hubspot.com/website/css-animation-examples
+ */
 h1:hover::before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
   transform: scaleX(1);
-  transform-origin: top bottom;
+  -webkit-transform-origin: left right;
+  -moz-transform-origin: left right;
+  -ms-transform-origin: left right;
+  -o-transform-origin: left right;
+  transform-origin: left right;
 }
-
+/* 
+  The content is non because I don't want new text there. Its positioned absolutly to overlap elements. Its inset is 6% for the top to lower it down, 
+  its 0.75% for both left and right to close in the sides and its 51% for the bottom to raise it to the bottom of the box of the h1 tag. Its border increases to 2 pixels
+  to show that the object is a hoverable item. Its z index is -1 so that it doesn't go overtop of the text. The transition its self is to transform the background of the h1 tag
+  when the mouse is hovered over it, it takes 0.3 seconds for the duration of the transition to play and it starts slow then speeds up in the middle then slows down again. I have
+  it so it has no delay that it doesn't look like the website is lagging. This is referenced from https://blog.hubspot.com/website/css-animation-examples
+ */
 h1::before {
   content: "";
-  display: inline-block;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   inset: 6% 0.75% 51% 0.75%;
   border: #022534 solid 2px;
   background: #b3e0ff;
   z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out,
+    -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+}
+/* 
+  This aligns the text to be center as a font of 40 pixels it also puts a border around the text thats dark navy and 1 pixel big.
+ */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  border: #022534 solid 1px;
 }
 /*
   Makes the nav a little bit small than the header. It makes it so that the width is 96% so that it isn't overlappping with the footer
@@ -103,6 +129,8 @@ nav {
   completly crash with each other. I also made the corners have more of a curve.
  */
 nav ul {
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
   border-radius: 25px 25px 25px 25px;
   list-style-type: none;
   margin: 0;
@@ -134,7 +162,6 @@ nav li a {
  */
 nav li a:hover,
 nav li a:focus {
-  background-size: 100% 100%;
   background-color: #ffffff;
   color: #022534;
 }
@@ -142,17 +169,21 @@ nav li a:focus {
   This makes it so the color of the text is black, it also gives the text a font size of 24. It makes the padding around the text 20 
   pixels but the width is how much the the content of the text is. It makes the background color a light blue because i want it to 
   display trust and imagination. It gives the border a very small curve, gives a margin to the bottom of 50 pixels to space out p tags
-  from each other. Gives the Paragraph box a shadow of a darker grey than the background light grey.
+  from each other. Gives the Paragraph box a shadow of a darker grey than the background light grey. This also puts a 5% margin to the left of the screen 
  */
 p {
+  margin-left: 5%;
   display: inline-block;
   color: #0c0c0c;
   font-size: 24px;
   padding: 20px;
   background-color: #54baff;
+  -webkit-border-radius: 3px 3px 5px 5px;
+  -moz-border-radius: 3px 3px 5px 5px;
   border-radius: 3px 3px 5px 5px;
   margin-bottom: 50px;
   -webkit-box-shadow: 5px 5px 2px #acacac;
+  -moz-box-shadow: 5px 5px 2px #acacac;
   box-shadow: 5px 5px 2px #acacac;
 }
 /*
@@ -161,6 +192,8 @@ p {
  */
 section {
   padding: 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 15px;
 }
@@ -187,7 +220,8 @@ footer {
 }
 /*
   This icon area makes it so that it shows an icon as a button that you can press to go to a different link. 
-  It makes its height 40 pixels and it has a top margin of 5 and a left margin of 20 in case you add multiple of the same elements
+  It makes its height 40 pixels and it has a top margin of 5 and a left margin of 20 in case you add multiple of the same elements. 
+  This also puts a border around it to show whats clickable, the border is dark navy and 1 pixel big.
  */
 .icon-style {
   border: 1px solid #022534;
